@@ -1,0 +1,81 @@
+﻿/**
+ * 
+ * Plugin: WooCommerce All in One Currency Converter
+ * Author: http://dev49.net
+ *
+ */
+
+
+/* ---------------------------- SWITCHER THEMES ---------------------------- */
+
+
+/* Regular option-select (dropdown) */
+
+	/* Main container */
+	.wcaiocc-switcher-dropdown.wcaiocc-container {
+		
+	}
+
+	/* Text before combobox (<p>) */
+	.wcaiocc-switcher-dropdown.wcaiocc-container p.wcaiocc-text { 
+		
+	}
+
+	/* Combobox (<select> tag) */
+	.wcaiocc-switcher-dropdown.wcaiocc-container select.wcaiocc-select { 
+		
+	}
+
+	/* Combobox option (<option> tag) */
+	.wcaiocc-switcher-dropdown.wcaiocc-container option.wcaiocc-option { 
+		
+	}
+
+
+
+/* Buttons (<li> items) */
+
+	/* Main container */
+	.wcaiocc-switcher-buttons.wcaiocc-container {
+
+	}
+
+	/* Text before buttons (<p>) */
+	.wcaiocc-switcher-buttons.wcaiocc-container p.wcaiocc-text { 
+		
+	}
+
+	/* List (<ul> tag) */
+	.wcaiocc-switcher-buttons.wcaiocc-container ul.wcaiocc-list { 
+		overflow: hidden;
+		list-style: none outside;
+	}
+
+	/* List item (<li> tag) */
+	.wcaiocc-switcher-buttons.wcaiocc-container li.wcaiocc-list-item { 
+		float: left;
+		margin: 0 4px 4px 0;
+		list-style: none outside;
+	}
+
+	/* Link in a list item (<a> tag) */
+	.wcaiocc-switcher-buttons.wcaiocc-container a.wcaiocc-list-item-link { 
+		float: left;
+		padding: 1px 5px;
+		border: 1px solid #E6E6E6;
+		border-radius: 5px;
+		transition: all 150ms ease;
+	}
+
+	/* Selected link in a list item (<a> tag) */
+	.wcaiocc-switcher-buttons.wcaiocc-container a.wcaiocc-list-item-link.selected { 
+		background: #F2F2F2;
+	}
+
+	/* Hover link in a list item (<a> tag) */
+	.wcaiocc-switcher-buttons.wcaiocc-container a.wcaiocc-list-item-link:hover { 
+		background: #FAFAFA;
+		transition: all 150ms ease;
+	}
+
+

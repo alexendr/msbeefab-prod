@@ -1,0 +1,2677 @@
+
+/*
+* 4.0 Content
+* -----------------------------------------------------------------------------
+*/
+
+/*
+* 4.1 - Heading
+* -----------------------------------------------------------------------------
+*/
+.noo-page-heading{
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 15px 0 15px;
+  height: 360px;
+  text-align: center;
+  position: relative;
+  color: @white;
+  .display-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  &.parallax{
+    background-attachment: fixed !important;
+    background-size: auto;
+    @media( max-width: 1024px ){
+      background-attachment: inherit !important;
+      background-size: cover !important;
+      background-position: center !important;
+    }
+  }
+  &:before{
+    background: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+  }
+
+  .noo-heading-content{
+    position: relative;
+  }
+  .page-title{
+    padding: 0 0 8px;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: @white;
+  }
+  .noo-page-breadcrumb{
+    color: @white;
+    display: inline-block;
+    &:before{
+      content: "\e074";
+      font-family: 'ElegantIcons';
+      padding-right: 4px;
+    }
+    a{
+      color: @white;
+      text-decoration: none;
+      &:hover{
+        color: @brand-primary;
+      }
+    }
+    span{
+      padding: 0 3px;
+    }
+    i{
+      .translate(0,3px);
+      display: inline-block;
+    }
+  }
+}
+
+
+/**
+ * 4.2 - Box layout
+ * -----------------------------------------------------------------------------
+ */
+.boxed-layout:not(.page-template-page-left-menu) {
+  background-color: @body-bg;
+  background-image: url("@{body-bg-image}");
+  background-position: @body-bg-align;
+  background-repeat: @body-bg-repeat;
+  background-attachment: @body-bg-attachment;
+  .background-cover( @body-bg-cover );
+  .site {
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+    background-color: @white;
+    .box-shadow( @site-box-shadow );
+    width: 100%;
+    max-width: unit( @site-max-width, px );
+    .noo-header .navbar-wrapper{
+      width: 100%;
+      max-width: unit( @site-max-width, px );
+      margin: 0 auto;
+    }
+  }
+  .header-eff.fixed_top.eff{
+    .box-shadow(none);
+  }
+  .header-eff.header-transparent.eff{
+    background: none;
+    .navbar-wrapper{
+      background: @white;
+    }
+  }
+  .site .header-eff.fixed_top.eff .navbar-wrapper{
+    .box-shadow(0 0 3px 0 rgba(0, 0, 0, 0.3));
+  }
+}
+
+/**
+ * 4.2 - Testimonial
+ * -----------------------------------------------------------------------------
+ */
+.noo_testimonial-wrap{
+  position: relative;
+  padding: 60px 9%;
+  text-align: center;
+  .icon-quote-left{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    color: @gray-white;
+    font-size: 60px;
+  }
+  .noo_testimonial{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li{
+      cursor: ew-resize;
+      img{
+        .border-radius(50%);
+        max-width: 60px;
+        max-height: 60px;
+      }
+      .noo-testimonial-content{
+        color: #666;
+        .testimonial-author{
+          text-transform: uppercase;
+          color: @gray;
+          font-weight: @font-weight-bold;
+          font-family: @headings-font-family;
+          display: block;
+          margin: 25px 0 30px;
+          strong{
+            text-transform: none;
+            font-size: @font-size-base;
+            font-weight: @font-weight-base;
+            padding-left: 10px;
+          }
+        }
+        p{
+          font-size: 15px;
+          padding: 0 10%;
+          margin: 0;
+        }
+      }
+    }
+    &.noo-sync2{
+      max-width: 400px;
+      width: 100%;
+      margin: 0 auto 10px;
+      li{
+        cursor: auto;
+        padding: 10px 0;
+        img{
+          border: 5px solid #f5f5f5;
+          max-width: 95px;
+          max-height: 95px;
+          .transition(all 0.4s ease 0s);
+          cursor: pointer;
+        }
+      }
+      .synced{
+        li{
+          img{
+            .scale(1.2);
+          }
+        }
+      }
+      &+ .noo-sync1{
+        li .noo-testimonial-content {
+          p{
+            font-size: @font-size-large;
+            font-style: italic;
+          }
+          .testimonial-author {
+            margin: 28px 0 22px;
+            strong{
+              display: block;
+              font-weight: @font-weight-base;
+              text-transform: uppercase;
+              font-size: @font-size-base;
+              padding-top: 1px;
+            }
+          }
+        }
+      }
+    }
+    .owl-controls {
+      margin-top: 16px;
+      .owl-buttons div{
+        width: 30px;
+        height: 20px;
+        .border-radius(0);
+        padding: 0;
+        .opacity(1);
+        margin: 0 10px;
+        text-indent: 100px;
+        position: relative;
+        background: transparent;
+        overflow: hidden;
+        &.owl-prev{
+          &:before{
+            content: "\23";
+            font-family: 'ElegantIcons';
+            position: absolute;
+            top: -10px;
+            left: -100px;
+            font-size: 30px;
+            color: #888888;
+            .transition(all 0.4s ease 0s);
+          }
+          &:hover{
+            &:before{
+              color: @brand-primary;
+            }
+          }
+        }
+        &.owl-next{
+          &:before{
+            content: "\24";
+            font-family: 'ElegantIcons';
+            position: absolute;
+            top: -10px;
+            left: -100px;
+            font-size: 30px;
+            color: #888888;
+            .transition(all 0.4s ease 0s);
+
+          }
+          &:hover{
+            &:before{
+              color: @brand-primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.noo_testimonial_white{
+  .noo_testimonial-wrap{
+    .icon-quote-left{
+      display: none;
+    }
+    .noo_testimonial{
+      li {
+        .noo-testimonial-content{
+          color: @white;
+          .testimonial-author{
+            color: @white;
+          }
+          p{
+            font-size: @font-size-base;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .owl-controls .owl-buttons {
+        div.owl-next:before,
+        div.owl-prev:before{
+          color: @white;
+        }
+      }
+    }
+  }
+}
+/**
+ * 4.2 - Noo Mailchip
+ * -----------------------------------------------------------------------------
+ */
+.noo-sh-mailchimp{
+  .clearfix;
+  .noo-mail-title{
+    font-size: 42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  .noo-mail-desc{
+    font-size: 20px;
+    color: @gray;
+    margin: 5px 0 0 0;
+  }
+  form{
+    max-width: 500px;
+    width: 100%;
+    margin: 25px 0 0 0;
+    position: relative;
+    &:before{
+      content: "\f0e0";
+      font-family: 'FontAwesome';
+      position: absolute;
+      right: 15px;
+      top: 8px;
+      color: #cccccc;
+      font-size: 20px;
+    }
+    input[type='submit']{
+      display: none;
+    }
+    input:not([type='submit']){
+      width: 100%;
+      height: 45px;
+      background: @white;
+      border: 1px solid @gray-lighter;
+      padding: 0 10px;
+      color: #aaaaaa;
+      font-size: 15px;
+      .placeholder(#aaaaaa);
+    }
+  }
+  &.style_two,
+  &.style_three{
+    .noo-mailchimp-header{
+      float: left;
+      width: 24%;
+      .noo-mail-title{
+        letter-spacing: 2px;
+        color: @white;
+        display: inline-block;
+        position: relative;
+        &:before{
+          content: "\f0e0";
+          font-family: 'FontAwesome';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          color: #cccccc;
+          font-size: 120px;
+          .opacity(0.1);
+          .translate(-50%,-50%);
+        }
+      }
+      .noo-mail-desc{
+        display: none;
+      }
+    }
+    form{
+     float: left;
+      width: 76%;
+      max-width: none;
+      margin: 0;
+      &:before{
+        display: none;
+      }
+      input:not([type='submit']){
+        max-width: 650px;
+        display: inline-block;
+      }
+      input[type='submit']{
+        display: inline-block;
+        font-size: @font-size-large;
+        letter-spacing: 1px;
+        color: @white;
+        text-transform: uppercase;
+        height: 45px;
+        background: @gray-dark;
+        padding: 0 45px;
+        border: 0;
+        .translate(20px,1px);
+        .transition(all 0.4s ease 0s);
+        &:hover{
+          background: darken(@gray-dark,15%);
+        }
+        &:focus{
+          outline: none;
+          outline-color: transparent;
+        }
+      }
+    }
+  }
+  &.style_three{
+    .noo-mail-title:before{
+      display: none;
+    }
+    form{
+      input:not([type='submit']){
+        padding: 0 15px;
+      }
+      input{
+        .border-radius(25px);
+      }
+      input[type='submit']{
+        background: @secondary_color;
+        &:hover{
+          background: @hover-secondary;
+        }
+      }
+    }
+  }
+  &.style_four{
+    text-align: center;
+    .noo-mail-title{
+      color: @white;
+    }
+    .noo-mail-desc{
+      color: @white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 10px;
+    }
+    form{
+      margin: 35px auto 0;
+      max-width: 770px;
+      &:before{
+        content: "\f1d8";
+      }
+      input{
+        border-color: #c8cbd1;
+        border-width: 2px;
+        background: transparent;
+        color: fade(@white,80);
+        .placeholder(fade(@white,80));
+      }
+    }
+  }
+}
+
+.noo-home1-mail{
+  .vc_column-inner{
+    height: 340px;
+    position: relative;
+    .noo-sh-mailchimp.style_one{
+      position: absolute;
+      right: 85px;
+      top: 50%;
+      .translate(0,-50%);
+      max-width: 500px;
+      width: 100%;
+      @media( max-width: 991px ){
+        position: relative;
+        right: auto;
+        top: auto;
+        .translate(0, 80px);
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Services
+ * -----------------------------------------------------------------------------
+ */
+.noo-services{
+  text-align: center;
+
+  &.style_center{
+    .noo-service-icon{
+      i{
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        .translate(-50%,50%);
+        font-size: 28px;
+        color: @brand-primary;
+        &:last-child{
+          left: -100%;
+        }
+      }
+    }
+    &:hover{
+      .noo-service-icon{
+        i:first-child{
+          left: 150%;
+
+        }
+        i:last-child{
+          left: 50%;
+        }
+      }
+      .noo-service-content{
+        &:before{
+          .scaleX(2);
+        }
+      }
+    }
+  }
+  .noo-service-icon{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    background: #f8f8f8;
+    display: inline-block;
+    .border-radius(50%);
+    overflow: hidden;
+    i{
+      .transition(all 0.4s ease 0s);
+    }
+  }
+  .noo-service-content{
+    position: relative;
+    padding-bottom: 17px;
+    p{
+      padding: 0 3%;
+    }
+    &:before{
+      .transition(all 0.4s ease 0s);
+      width: 50px;
+      height: 3px;
+      content: '';
+      background: @brand-primary;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -25px;
+    }
+  }
+  &.style_left{
+    .clearfix;
+    text-align: left;
+    margin: 60px 0;
+    &.image{
+      .noo-service-icon{
+        padding-right: 25px;
+      }
+      .noo-service-content{
+        padding-left: 0;
+      }
+    }
+    .noo-service-icon{
+      float: left;
+      .border-radius(0);
+      background: none;
+      width: auto;
+      height: auto;
+      i{
+        font-size: 40px;
+        color: #cccccc;
+
+      }
+      i:last-child{
+        display: none;
+      }
+    }
+    .noo-service-content{
+      padding: 0 0 0 65px;
+      &:before{
+        display: none;
+      }
+      h3{
+        margin: 0 0 8px 0;
+        text-transform: uppercase;
+        font-family: @font-family-sans-serif;
+        font-size: @font-size-large;
+        font-weight: @font-weight-bold;
+      }
+      p{
+        padding: 0;
+      }
+    }
+    &:hover{
+      .noo-service-icon{
+        .animation-name(servies-icon2);
+        .animation-duration(0.6s);
+      }
+    }
+  }
+}
+@keyframes servies-icon2 {
+  0%{
+    .rotate(0);
+  }
+  25%{
+    .rotate(15deg);
+  }
+  50%{
+    .rotate(0deg);
+  }
+  75%{
+    .rotate(-15deg);
+  }
+  100%{
+    .rotate(0deg);
+  }
+}
+@-webkit-keyframes servies-icon2 {
+  0%{
+    .rotate(0);
+  }
+  25%{
+    .rotate(15deg);
+  }
+  50%{
+    .rotate(0deg);
+  }
+  75%{
+    .rotate(-15deg);
+  }
+  100%{
+    .rotate(0deg);
+  }
+}
+@keyframes servies-icon-top {
+  from{
+    .opacity(0);
+    .translate(0,-60px);
+  }
+  to{
+    .opacity(1);
+    .translate(0,0);
+  }
+}
+@-webkit-keyframes servies-icon-top {
+  from{
+    .opacity(0);
+    .translate(0,-60px);
+  }
+  to{
+    .opacity(1);
+    .translate(0,0);
+  }
+}
+@keyframes servies-icon-bottom {
+  from{
+    .opacity(0);
+    .translate(0,60px);
+  }
+  to{
+    .opacity(1);
+    .translate(0,0);
+  }
+}
+@-webkit-keyframes servies-icon-bottom {
+  from{
+    .opacity(0);
+    .translate(0,60px);
+  }
+  to{
+    .opacity(1);
+    .translate(0,0);
+  }
+}
+
+/**
+ * 4.2 - Noo Services
+ * -----------------------------------------------------------------------------
+ */
+.noo_partner-wrap{
+
+  .noo_partner{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li{
+      position: relative;
+      perspective: 300px;
+      perspective-origin: center;
+      display: inline-block;
+      img{
+        width: auto;
+        &:last-child{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          .translate(-50%,-50%);
+          .transform-origin(top center);
+          .opacity(0);
+
+        }
+      }
+      &:hover{
+        img{
+          &:last-child{
+            .opacity(1);
+            transition: transform 0.6s ease 0s, opacity 0s ease 0s;
+            -moz-transition: transform 0.6s ease 0s, opacity 0s ease 0s;
+            -webkit-transition: transform 0.6s ease 0s, opacity 0s ease 0s;
+            -ms-transition: transform 0.6s ease 0s, opacity 0s ease 0s;
+            transform: translate(-50%, -50%) rotateX(90deg);
+            -moz-transform: translate(-50%, -50%) rotateX(90deg);
+            -webkit-transform: translate(-50%, -50%) rotateX(90deg);
+            -ms-transform: translate(-50%, -50%) rotateX(90deg);
+          }
+        }
+      }
+    }
+  }
+  &.border{
+    position: relative;
+    padding: 55px 0;
+    &:before{
+      width: 65%;
+      height: 1px;
+      background: @gray-lighter;
+      content: '';
+      .translate(-50%,0);
+      position: absolute;
+      left: 50%;
+      top: 0;
+    }
+    &:after{
+      width: 65%;
+      height: 1px;
+      background: @gray-lighter;
+      content: '';
+      .translate(-50%,0);
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Services
+ * -----------------------------------------------------------------------------
+ */
+
+.noo-product-sale-wrap{
+  text-align: center;
+  .noo-sale-title{
+    font-size: 120px;
+    color: #474b71;
+    text-transform: uppercase;
+    @media( max-width: 991px ){
+      font-size: 80px;
+    }
+    @media( max-width: 767px ){
+      font-size: 50px;
+    }
+
+  }
+  .noo-sale-subtitle{
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 30px 0 8px;
+  }
+  > img{
+    margin-top: -60px;
+    @media( max-width: 991px ){
+      margin-top: -40px;
+    }
+    @media( max-width: 767px ){
+      margin-top: -10px;
+    }
+
+  }
+  .noo-on-sale{
+    list-style: none;
+    padding: 0;
+    margin: 75px auto 0;
+    max-width: 680px;
+    li{
+      padding: 0 10px;
+      img{
+        .transition(all 0.4s ease 0s);
+        width: 100%;
+      }
+      a{
+        position: relative;
+        display: block;
+        border: 1px solid @gray-white;
+        overflow: hidden;
+        &:hover{
+          img{
+            .scale(1.1);
+          }
+          &:before{
+            .scale(1);
+            .opacity(1);
+          }
+          h4{
+            .transition(all 0.4s ease 0.2s);
+            .opacity(1);
+            .scale(1);
+          }
+        }
+        &:before{
+          display: block;
+          width: 100%;
+          height: 100%;
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: rgba(0,0,0,0.3);
+          .transition(all 0.4s ease 0s);
+          .scale(0.5);
+          .opacity(0);
+          z-index: 1;
+        }
+        h4{
+          color: @white;
+          text-transform: uppercase;
+          font-size: @font-size-small;
+          margin: 0;
+          padding: 0;
+          position: absolute;
+          left: 0;
+          top: 48%;
+          width: 100%;
+          text-align: center;
+          .scale(1.8);
+          z-index: 2;
+          .transition(all 0.2s ease 0s);
+          .opacity(0);
+        }
+
+      }
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Banners
+ * -----------------------------------------------------------------------------
+ */
+
+.noo-banner-wrap{
+  .clearfix;
+  .banner-item{
+    width: 25%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    &.default{
+      &:hover{
+        img{
+          .scale(1.05);
+        }
+      }
+    }
+    &.vertical,
+    &.horizontal{
+      img{
+        .scaleX(1.04);
+      }
+      &:hover{
+        img{
+          margin-left: -10px;
+        }
+      }
+    }
+    .banner-content{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      align-items: center;
+      -webkit-align-items: center;
+      .display-flex;
+      padding-left: 150px;
+
+      h3{
+        font-size: 48px;
+        text-transform: uppercase;
+        width: 45%;
+        color: @gray-dark;
+        position: relative;
+      }
+      a{
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        i{
+          padding-left: 5px;
+          display: inline-block;
+          .translate(0,2px);
+        }
+      }
+    }
+    img{
+      width: 100%;
+      .transition(all 0.5s ease 0s);
+    }
+    &.default{
+      .banner-content{
+        .opacity(0);
+        .scale(1.5);
+        .transition(all 0.5s ease 0s);
+      }
+      &:hover{
+        .banner-content{
+          .scale(1);
+          .opacity(1);
+        }
+      }
+    }
+    &.horizontal{
+      width: 50%;
+
+    }
+    &.vertical{
+     .banner-content{
+       .opacity(1);
+       display: block;
+       align-items: inherit;
+       padding-top: 150px;
+       padding-left: 120px;
+     }
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Simple Banner
+ * -----------------------------------------------------------------------------
+ */
+.noo_simple_banner{
+  background: #eceff6;
+  position: relative;
+  .clearfix;
+  text-align: right;
+  .display-flex;
+  justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  padding: 200px 60px;
+  img{
+    position: absolute;
+    left: 50px;
+    top: -40px;
+    .transition(all 0.6s ease 0s);
+    max-width: 494px;
+  }
+  &:hover{
+    img{
+      left: 30px;
+    }
+  }
+  h3{
+    font-size: 62px;
+    text-transform: uppercase;
+    max-width: 270px;
+    margin: 0 0 18px 0;
+    line-height: 1.2;
+  }
+  a{
+    clear: both;
+    text-transform: uppercase;
+    font-size: @font-size-base - 2;
+    display: inline-block;
+    font-weight: @font-weight-bold;
+    &:hover{
+      text-decoration: none;
+    }
+    span{
+      border-bottom: 2px solid @brand-primary;
+      padding-bottom: 5px;
+    }
+    i{
+      padding-left: 7px;
+      font-size: @font-size-base;
+    }
+  }
+  &.left{
+    img{
+      left: auto;
+      right: 20px;
+      max-width: 494px;
+    }
+    &:hover{
+      img{
+        left: auto;
+        right: 40px;
+      }
+    }
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+/**
+ * 4.2 - Noo Countdown
+ * -----------------------------------------------------------------------------
+ */
+.noo_countdow_background{
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 75px 0;
+  min-height: 520px;
+  h2{
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: @white;
+    text-transform: uppercase;
+    margin: 0 0 32px 0;
+
+  }
+  p{
+    color: @gray-lighter;
+    font-size: @font-size-large;
+  }
+}
+.noo_countdown{
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 160px 0;
+  @media( max-width: 767px ){
+    padding: 60px 0;
+  }
+  &.noo_countdown_left{
+    max-width: 1170px;
+    width: 100%;
+    margin: -270px auto 45px;
+    background-color: @white;
+    padding: 60px 110px 50px 0;
+    .clearfix;
+    .noo_countdown_content{
+      float: right;
+      h2{
+        color: @gray;
+        font-size: 22px;
+        margin: 45px 0 12px;
+      }
+      p{
+        color: @text-color;
+        font-size: 15px;
+        line-height: 22px;
+      }
+      .custom_link{
+        background-color: transparent;
+        border: 1px solid @gray-lighter;
+        margin-top: 23px;
+        &:hover,
+        &:focus{
+          border-color: @secondary_color;
+          background-color: @secondary_color;
+          color: @white;
+        }
+      }
+      .noo_countdown_date{
+        margin-top: 0;
+        .countdown-section{
+          background: @secondary_color;
+          color: @white;
+          .box-shadow(0 5px 0 0 fade(@secondary_color,30));
+        }
+      }
+    }
+
+  }
+  h2{
+    font-size: 42px;
+    letter-spacing: 1px;
+    color: @white;
+    text-transform: uppercase;
+    margin: 0 0 32px 0;
+  }
+  p{
+    color: @gray-lighter;
+    font-size: @font-size-large;
+
+  }
+
+  .noo_countdown_date{
+    margin-top: 55px;
+    span{
+      display: inline-block;
+    }
+    .countdown-section{
+      min-height: 90px;
+      min-width: 90px;
+      background: @white;
+      .border-radius(5px);
+      margin: 0 15px;
+      color: @secondary_color;
+      .box-shadow(0 5px 0 0 rgba(255,255,255,0.3));
+      @media( max-width: 520px ){
+        width: 35%;
+        margin-bottom: 30px;
+      }
+      .countdown-amount{
+        font-size: 38px;
+        font-weight: 900;
+        display: block;
+        line-height: 1;
+        padding-top: 15px;
+      }
+      .countdown-period{
+        line-height: 1;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .custom_link{
+    font-size: 14px;
+    text-transform: uppercase;
+    display: inline-block;
+    background: @white;
+    .border-radius(25px);
+    padding: 10px 40px;
+    margin-top: 80px;
+    text-decoration: none;
+    .transition(all 0.4s ease 0s);
+    margin-bottom: 10px;
+    &:hover,
+    &:focus{
+      background: @secondary_color;
+      border-color: @secondary_color;
+      color: @white;
+    }
+  }
+}
+
+
+/**
+ * 4.2 - Noo Countdown Product
+ * -----------------------------------------------------------------------------
+ */
+.noo-countdown-product{
+  .display-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  padding: 108px 0 90px;
+  position: relative;
+  div{
+    text-align: left;
+  }
+  .wp-post-image{
+    position: absolute;
+    top: -5px;
+    left: -20%;
+    max-width: 445px;
+    @media( max-width: 1024px ){
+      display: none;
+    }
+  }
+  .defaultCountdown{
+    .countdown-section{
+      display: inline-block;
+      border-left: 1px solid #e2e2e2;
+      text-align: center;
+      padding: 0 27px;
+      &:first-child{
+        border-left: 0;
+        padding-left: 0;
+      }
+      .countdown-amount{
+        display: block;
+        font-size: 48.45px;
+        line-height: 1;
+        color: @gray-dark;
+        font-weight: @font-weight-bold;
+        margin-bottom: 5px;
+      }
+      .countdown-period{
+        font-weight: @font-weight-base;
+        font-size: @font-size-large;
+        color: @gray-dark;
+        display: block;
+        text-align: center;
+
+      }
+    }
+  }
+  .noo-content-countdow{
+    margin: 50px 0 0;
+    h3{
+      font-size: 22px;
+      font-weight: @font-weight-base;
+      font-family: @font-family-sans-serif;
+      margin: 0 0 15px 0;
+      padding: 0;
+      a{
+        color: @gray-dark;
+      }
+    }
+  }
+  .price{
+    color: #d2a637;
+    font-size: 22px;
+    padding: 0 0 10px 0;
+    display: block;
+    ins{
+      text-decoration: none;
+    }
+    del{
+      font-size: @font-size-base;
+      color: #b4b4b4;
+      padding-right: 7px;
+    }
+  }
+  div.description{
+    max-width: 600px;
+    margin-bottom: 45px;
+  }
+  a.add_to_cart_button{
+    font-size: @font-size-small;
+    color: @white;
+    background: @secondary_color;
+    font-weight: @font-weight-bold;
+    height: 40px;
+    .transition(all 0.4s ease 0s);
+    text-transform: uppercase;
+    .border-radius(0);
+    display: inline-block;
+    padding: 0 23px;
+    line-height: 38px;
+    text-decoration: none;
+    .border-radius(20px);
+    &:before{
+      font-family: 'ElegantIcons';
+      content: "\e07a";
+      font-size: 14px;
+      padding-right: 7px;
+    }
+    &:hover{
+      background: darken(@secondary_color,15%);
+      color: @white;
+    }
+    &:focus{
+      outline: none;
+      outline-color: transparent;
+    }
+    &.loading:after{
+      top: auto;
+    }
+  }
+  .added_to_cart{
+    padding-left: 7px;
+  }
+}
+
+/**
+ * 4.2 - Noo Blog
+ * -----------------------------------------------------------------------------
+ */
+.noo-shblog-content{
+  .clearfix;
+}
+.noo_sh_blog_wraper{
+  overflow: hidden;
+}
+.noo-shblog-header{
+  text-align: center;
+  color: @gray;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  h3{
+    padding: 0;
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    span{
+      display: inline-block;
+      border-left: 3px solid @brand-primary;
+      border-right: 3px solid @brand-primary;
+      padding: 0 23px;
+      line-height: 0.8;
+    }
+  }
+  p{
+    margin: 8px 0 0 0;
+    text-transform: none;
+    font-weight: @font-weight-bold;
+    letter-spacing: 1px;
+    font-style: italic;
+    color: @gray-dark;
+  }
+}
+.noo-shblog-thumbnail{
+  position: relative;
+  overflow: hidden;
+  &:hover{
+    a{
+      &:before{
+        .opacity(1);
+      }
+      &:after{
+        .opacity(1);
+        .transition(all 0.4s ease 0.2s);
+        .scale(1);
+      }
+    }
+    img{
+      .scale(1.1);
+    }
+    .view-link{
+      &:before{
+        left: 50%;
+        .opacity(1);
+      }
+      &:after{
+        top: 50%;
+        .opacity(1);
+      }
+    }
+  }
+  a{
+    position: relative;
+    display: block;
+    &:before{
+      width: 100%;
+      height: 100%;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: fade(@black,30);
+      .transition(all 0.4s ease 0s);
+      .opacity(0);
+      z-index: 1;
+    }
+    &:after{
+      width: 50px;
+      height: 50px;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -25px;
+      margin-top: -25px;
+      border: 1px solid @white;
+      .border-radius(50%);
+      .transition(all 0.1s ease 0s);
+      .opacity(0);
+      .scale(1.5);
+      z-index: 1;
+    }
+  }
+  img{
+    .transition(all 0.4s ease 0s);
+  }
+
+  .view-link{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    .translate(-50%,-50%);
+    .border-radius(50%);
+    z-index: 2;
+    &:before{
+      background: @white;
+      width: 25px;
+      height: 1px;
+      content: '';
+      position: absolute;
+      left: -100%;
+      top: 50%;
+      .translate(-50%,-50%);
+      .opacity(0);
+      .transition(all 0.4s ease 0s);
+    }
+    &:after{
+      background: @white;
+      width: 1px;
+      height: 25px;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -100%;
+      .opacity(0);
+      .translate(-50%,-50%);
+      .transition(all 0.4s ease 0s);
+    }
+  }
+}
+.noo-shblog-meta{
+  font-size: 14px;
+  margin-top: 27px;
+  span{
+    margin-right: 21px;
+    &:hover{
+      i{
+        color: @brand-primary;
+      }
+      a{
+        color: @brand-primary;
+        text-decoration: none;
+      }
+    }
+  }
+  i{
+    color: #cccccc;
+    padding-right: 6px;
+  }
+}
+.noo-shblog-content{
+  .date{
+    display: none;
+  }
+  h3{
+    font-size: 22px;
+    margin: 15px 0 18px;
+    padding: 0;
+    a{
+      color: @gray-dark;
+      &:hover{
+        color: @brand-primary;
+        text-decoration: none;
+      }
+    }
+  }
+  p{
+    color: @gray;
+    padding: 0;
+    margin: 0;
+  }
+}
+.custom_link{
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  background: @white;
+  .border-radius(25px);
+  padding: 10px 30px;
+  margin-top: 60px;
+  text-decoration: none;
+  .transition(all 0.4s ease 0s);
+  margin-bottom: 10px;
+  border: 1px solid @gray-lighter;
+  i{
+    padding-left: 5px;
+  }
+  &:hover{
+    background: @gray-lighter;
+    text-decoration: none;
+    color: @gray;
+  }
+}
+//===========style 2
+.noo-shblog-item{
+  background: @white;
+  position: relative;
+  .clearfix;
+  &.style_2{
+    .noo-shblog-meta{
+      display: none;
+    }
+    &:nth-child(even){
+      .noo-shblog-thumbnail{
+        left: auto;
+        right: 0;
+      }
+      .noo-shblog-entry{
+        float: left;
+      }
+    }
+  }
+  .noo-shblog-thumbnail{
+    display: block;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &:hover{
+      &:before{
+        .opacity(1);
+      }
+      &:after{
+        .opacity(1);
+        .transition(all 0.4s ease 0.2s);
+        .scale(1);
+      }
+    }
+    &:before{
+      width: 100%;
+      height: 100%;
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: fade(@black,30);
+      .transition(all 0.4s ease 0s);
+      .opacity(0);
+      z-index: 1;
+    }
+    &:after{
+      width: 50px;
+      height: 50px;
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -25px;
+      margin-top: -25px;
+      border: 1px solid @white;
+      .border-radius(50%);
+      .transition(all 0.1s ease 0s);
+      .opacity(0);
+      .scale(1.5);
+      z-index: 1;
+    }
+  }
+  .noo-shblog-entry{
+    float: right;
+    width: 50%;
+    padding: 73px 5% 80px;
+    text-align: center;
+    .cat{
+      color: @brand-primary;
+      a{
+        text-transform: uppercase;
+        font-size: 14px;
+        color: @brand-primary;
+      }
+    }
+    h3{
+      font-size: 24px;
+      font-weight: 500;
+      margin: 10px 0 20px;
+      padding: 0;
+      a{
+        color: @gray;
+        &:hover{
+          color: @brand-primary;
+        }
+      }
+    }
+    p{
+      font-size: 15px;
+      line-height: 22px;
+      color: @text-color;
+    }
+    .view_link{
+      font-size: 12px;
+      text-transform: uppercase;
+      display: inline-block;
+      border: 1px solid @gray-lighter;
+      .border-radius(20px);
+      padding: 10px 25px;
+      text-decoration: none;
+      .transition(all 0.4s ease 0s);
+      margin-top: 45px;
+      font-weight: @font-weight-bold;
+      i{
+        padding-left: 5px;
+      }
+      &:hover,
+      &:focus{
+        background: @gray-lighter;
+        color: @gray;
+      }
+    }
+  }
+  &.style_3{
+    background: #f2f2f2;
+    padding-right: 30px;
+    margin-top: 40px;
+    &:first-child{
+      margin-top: 0;
+    }
+    .noo-shblog-meta{
+      display: none;
+    }
+    &:nth-child(even){
+      padding-left: 30px;
+      padding-right: 0;
+      .noo-shblog-thumbnail{
+        right: 0;
+        left: auto;
+      }
+      .noo-shblog-entry{
+        float: left;
+      }
+    }
+    .noo-shblog-thumbnail{
+      width: 40%;
+    }
+    .noo-shblog-entry{
+      padding: 25px 40px 50px;
+      width: 65%;
+      position: relative;
+      background: @white;
+      margin: 30px 0;
+      z-index: 2;
+      text-align: left;
+     .transition(all 0.4s ease 0s);
+      &:hover{
+        .box-shadow(0 0 15px 0 rgba(0,0,0,0.2));
+      }
+      .cat{
+        display: none;
+      }
+      .view_link{
+        margin-top: 25px;
+        border: 0;
+        background: @secondary_color;
+        color: @white;
+        .transition(all 0.4s ease 0s);
+        &:hover{
+          background: @hover-secondary;
+        }
+      }
+    }
+  }
+  &.style_4,
+  &.style_5{
+    width: 50%;
+    float: left;
+    @media( max-width: 991px ){
+      width: 100%;
+    }
+    .noo-shblog-meta{
+      display: none;
+    }
+    .noo-shblog-entry{
+      position: relative;
+      padding: 45px 5% 35px;
+      &:before{
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        margin-top: -20px;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid @white;
+        z-index: 2;
+      }
+      .cat{
+        display: none;
+      }
+      .date{
+        display: block;
+        color: @brand-primary;
+        text-transform: uppercase;
+        span{
+          font-size: 30px;
+          padding-right: 5px;
+        }
+      }
+      .view_link{
+        margin-top: 25px;
+      }
+    }
+    &.style_even{
+      clear: both;
+    }
+    &.style_even,
+    &.style_even + div{
+      .noo-shblog-thumbnail{
+        left: auto;
+        right: 0;
+      }
+      .noo-shblog-entry{
+        float: left;
+        &:before{
+          content: '';
+          position: absolute;
+          right: -20px;
+          left: auto;
+          top: 50%;
+          margin-top: -20px;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-left: 20px solid @white;
+          border-right: 0;
+          z-index: 2;
+        }
+      }
+    }
+  }
+  &.style_5{
+    margin: 40px 0;
+    background: transparent;
+    div.noo-shblog-entry{
+      text-align: left;
+      padding: 45px 5% 75px;
+      &:before{
+        top: 30px !important;;
+        left: -40px;
+        border: 0 !important;
+        width: 80px;
+        height: 2px;
+        background: @brand-primary;
+        margin-top: 0 !important;
+      }
+      .date{
+        display: none;
+      }
+      .noo-shblog-meta{
+        display: block;
+        margin-top: 0;
+        margin-bottom: 17px;
+      }
+      .view_link{
+        display: none;
+      }
+    }
+    &.style_even{
+      div.noo-shblog-entry{
+        text-align: right;
+        &:before{
+          top: 30px !important;
+          right: -40px;
+          left: auto;
+          border: 0;
+          width: 80px;
+          height: 2px;
+          background: @brand-primary;
+          margin-top: 0 !important;
+        }
+
+      }
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Blog Masonry
+ * -----------------------------------------------------------------------------
+ */
+.noo-blog-masonry-wraper{
+  position: relative;
+  overflow: hidden;
+  .noo-blog-masonry-item{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+.noo-blog-inner{
+  background: @white;
+  .transition(all 0.4s ease 0s);
+  &:hover{
+    .box-shadow(0 0 25px 5px rgba(0,0,0,0.1));
+    .blog-thumbnail{
+      img{
+        transform: scale(1.2) rotate(-3deg);
+      }
+      &:after{
+        .opacity(1);
+      }
+      .post-type-icon{
+        .translate(-50%,-50%);
+        .opacity(1);
+      }
+    }
+  }
+  .blog-thumbnail{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    &:after{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      .opacity(0);
+      background: rgba(0,0,0,0.3);
+      .transition(all 0.4s ease 0s);
+    }
+    img{
+      .transition(all 0.4s ease 0s);
+    }
+    .post-type-icon{
+      .transition(all 0.6s ease 0s);
+      font-size: 50px;
+      color: @white;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%) scale(1.7);
+      display: block;
+      z-index: 1;
+      .opacity(0);
+    }
+  }
+  .noo-blog-content{
+    border-width: 0 1px 1px 1px;
+    border-color: @gray-lighter;
+    border-style: solid;
+    h3{
+      margin: -30px 30px 0 30px;
+      padding: 20px 15px 0 15px;
+      font-size: 20px;
+      text-align: center;
+      background: @white;
+      position: relative;
+      a{
+        color: @gray-dark;
+        text-decoration: none;
+      }
+    }
+    .noo-blog-meta{
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 27px;
+      span{
+        margin-right: 21px;
+        &:hover{
+          i{
+            color: @brand-primary;
+          }
+          a{
+            color: @brand-primary;
+            text-decoration: none;
+          }
+        }
+      }
+      i{
+        color: #cccccc;
+        padding-right: 6px;
+      }
+    }
+  }
+  .noo-excerpt{
+    padding: 22px 30px 30px;
+    text-align: center;
+    color: @gray;
+    .custom_link{
+      margin: 10px 0 0;
+      border-color: #dddddd;
+      color: @gray-dark;
+      padding: 8px 18px;
+      font-size: 12px;
+      .transition(all 0.4s ease 0s);
+      &:hover,
+      &:focus{
+        color: @gray-dark;
+        background: #dddddd;
+        .box-shadow(0 2px 2px rgba(0,0,0,0.1));
+      }
+    }
+  }
+}
+.blog-pagination{
+  margin-top: 45px;
+  .pagination{
+    display: none;
+  }
+  .noo-loadmore-ajax {
+    display: block;
+    margin: 60px auto 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: white;
+    padding: 10px 30px;
+    margin-top: 60px;
+    text-decoration: none;
+    border: 1px solid #eeeeee;
+    .border-radius(25px);
+    .transition(all 0.4s ease 0s);
+    &:hover {
+      background: transparent;
+      color: #212121;
+      border: 1px solid #212121;
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Simple Product Slider
+ * -----------------------------------------------------------------------------
+ */
+.noo-simple-product-slider{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li{
+    padding: 0 15px;
+  }
+  .noo-simple-slider-item{
+    position: relative;
+    overflow: hidden;
+    &:hover{
+      img{
+        .scale(1.3);
+      }
+      &:before{
+        .scale(0.85);
+        .opacity(1);
+      }
+      .noo-simple-content{
+        h3,
+        .price{
+          .transition(all 0.4s ease 0.2s);
+          .opacity(1);
+          .translate(0,0);
+        }
+      }
+    }
+    img{
+      .transition(all 0.4s ease 0s);
+       width: 100%;
+      transform: translate3D(0,0,0);
+    }
+    &:before{
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(255,255,255,0.9);
+      .transition(all 0.4s ease 0s);
+      .scale(0.3);
+      .opacity(0);
+      z-index: 1;
+    }
+    .noo-simple-content{
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      .translate(0,-50%);
+      text-align: center;
+      z-index: 2;
+      h3{
+        text-transform: uppercase;
+        font-size: @font-size-large;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+        .translate(0,70px);
+        .opacity(0);
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .price{
+        .translate(0,-70px);
+        .opacity(0);
+        display: block;
+        color: @brand-primary;
+        font-size: @font-size-large;
+        font-weight: @font-weight-bold;
+      }
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Short Image
+ * -----------------------------------------------------------------------------
+ */
+.noo_short_image{
+  position: relative;
+  &:hover{
+    .noo_short_image_first{
+      img{
+        .scale(1.3);
+        .transition(all 20s ease 0s);
+      }
+      h3{
+        color: @white;
+      }
+    }
+    .noo_short_image_last{
+      img{
+        .scale(1);
+        .transition(all 5s ease 0s);
+      }
+    }
+  }
+  .noo_short_image_first{
+    position: relative;
+    overflow: hidden;
+    &:after{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: fade(@white,70);
+    }
+    img{
+      width: 100%;
+      .transition(all 20s ease 0s);
+    }
+    h3{
+      color: @white;
+      font-size: 80px;
+      text-transform: uppercase;
+      top: 70px;
+      position: absolute;
+      right: 100px;
+      .rotate(-90deg);
+      .transform-origin(right center);
+      .transition(all 0.4s ease 0s);
+      z-index: 22;
+      @media( max-width: 991px ){
+        display: none;
+      }
+    }
+  }
+  .noo_short_image_last{
+    position: absolute;
+    left: -10%;
+    top: 10%;
+    width: 90%;
+    height: 80%;
+    overflow: hidden;
+    @media( max-width: 991px ){
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+    img{
+      width: 100%;
+      .scale(1.2);
+      .transition(all 5s ease 0s);
+    }
+  }
+  &.right{
+    .noo_short_image_first{
+      h3{
+        .rotate(90deg);
+        .transform-origin(left center);
+        left: 100px;
+        right: auto;
+        top: 35px;
+      }
+    }
+    .noo_short_image_last{
+      right: -10%;
+      left: auto;
+      @media( max-width: 991px ){
+        right: 0;
+      }
+    }
+  }
+}
+/**
+ * 4.2 - Noo Simple Product
+ * -----------------------------------------------------------------------------
+ */
+.noo-simple-product{
+  position: relative;
+  .clearfix;
+  &.banner_right{
+    .simple-banner-left{
+      left: auto;
+      right: 0;
+    }
+    .noo-simple-content{
+      float: left;
+    }
+  }
+  .simple-banner-left{
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media( max-width: 991px ){
+      width: 100%;
+      position: relative;
+      left: auto;
+      top: auto;
+      height: 400px;
+    }
+    &.bottom_right{
+      .display-flex;
+      justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      -webkit-justify-content: flex-end;
+      align-items: flex-end;
+      -moz-align-items: flex-end;
+      -webkit-align-items: flex-end;
+      padding-bottom: 8.5%;
+      padding-right: 9.5%;
+      text-align: right;
+    }
+    &.center_center{
+      .display-flex;
+      justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      -webkit-justify-content: flex-end;
+      align-items: center;
+      -moz-align-items: center;
+      -webkit-align-items: center;
+      padding-right: 175px;
+      text-align: right;
+    }
+    &.top_left{
+      padding-top: 80px;
+      padding-left: 170px;
+    }
+    .banner-left-content{
+        h3{
+          color: @gray-dark;
+          margin: 0;
+          padding: 0 0 15px 0;
+          font-size: 42px;
+          text-transform: uppercase;
+        }
+        p{
+          color: @gray-dark;
+          font-size: 18px;
+          font-style: italic;
+          letter-spacing: 1px;
+        }
+      .custom_link{
+        border: 0;
+        background: @gray-dark;
+        color: @white;
+        margin-top: 30px;
+        i{
+          font-weight: 700;
+        }
+        &:hover{
+          background: darken(@gray-dark,15);
+        }
+      }
+    }
+  }
+  .noo-simple-content{
+    float: right;
+    .clearfix;
+    width: 50%;
+    @media( max-width: 991px ){
+      width: 100%;
+      float: none;
+    }
+    .noo-inner{
+      width: 50%;
+      float: left;
+      position: relative;
+      overflow: hidden;
+      .transition(all 0.4s ease 0s);
+      @media ( max-width: 500px ){
+        width: 100%;
+      }
+      &:hover{
+        .box-shadow(0 0 25px 5px rgba(0,0,0,0.1));
+        z-index: 1;
+        .noo-loop-cart{
+          left: 0;
+          top: 0;
+        }
+        .yith-wcwl-add-to-wishlist {
+
+          .add_to_wishlist,
+          .yith-wcwl-wishlistexistsbrowse,
+          .yith-wcwl-wishlistaddedbrowse{
+            &:before{
+              color: @brand-primary;
+            }
+          }
+        }
+        .size-noo-thumbnail-product{
+          .scale(1.2);
+        }
+      }
+      .size-noo-thumbnail-product{
+        .transition(all 1s ease 0s);
+      }
+      .compare-button,
+      .clear{
+        display: none !important;
+      }
+      .noo-loop-cart{
+        position: absolute;
+        left:  -80px;
+        top: -80px;
+        width: 70px;
+        height: 70px;
+        .transition(all 0.6s ease 0s);
+        &:before{
+          border-left: 70px solid @brand-primary;
+          border-bottom: 70px solid transparent;
+          position: absolute;
+          left: 0;
+          top: 0;
+          content: '';
+        }
+        .add_to_cart_button{
+          position: absolute;
+          left: 0;
+          top: 3px;
+          overflow: hidden;
+          .border-radius(0);
+          width: 70px;
+          height: 70px;
+          font-weight: @font-weight-base;
+          z-index: 1;
+          background: transparent;
+          text-indent: -100px;
+          &:before{
+            font-family: 'ElegantIcons';
+            content: "\e07a";
+            position: absolute;
+            .transition(all 0.4s ease 0s);
+            left: 110px;
+            top: 5px;
+            font-size: 20px;
+            color: @white;
+
+          }
+          &.loading{
+            .opacity(1);
+            padding: 0;
+            &:before{
+              display: none;
+            }
+            &:after {
+              width: 18px;
+              height: 18px;
+              text-indent: 0;
+              position: absolute;
+              font-size: 18px;
+              left: 13px;
+              top: 13%;
+              margin-left: 0;
+              right: auto;
+              color: @white;
+            }
+          }
+          &.added{
+            &:before{
+              display: none;
+            }
+            &:after{
+              position: absolute;
+              width: 18px;
+              height: 18px;
+              text-indent: 0;
+              font-size: 18px;
+              left: 13px;
+              top: 13%;
+              margin: 0;
+              right: auto;
+              color: @white;
+            }
+          }
+        }
+        .added_to_cart{
+          display: none;
+        }
+      }
+      .yith-wcwl-add-to-wishlist{
+        display: block;
+        width: 40px;
+        height: 40px;
+        z-index: 1;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        .add_to_wishlist{
+          display: block;
+          width: 40px;
+          height: 40px;
+          text-indent: 60px;
+          overflow: hidden;
+          position: relative;
+          .transition(all 0.4s ease 0s);
+          white-space: nowrap;
+          &:before{
+            content: "\e030";
+            font-family: 'ElegantIcons';
+            position: absolute;
+            left: -48px;
+            top: 8px;
+            font-size: 22px;
+            color: #aaaaaa;
+          }
+        }
+        .ajax-loading{
+          top: 14px;
+          z-index: 1;
+          position: absolute;
+          left: 7px;
+        }
+        .yith-wcwl-wishlistaddedbrowse{
+          .feedback{
+            display: none !important;
+          }
+          a{
+            display: block;
+            width: 40px;
+            height: 40px;
+            text-indent: 60px;
+            overflow: hidden;
+            position: relative;
+            .transition(all 0.4s ease 0s);
+            white-space: nowrap;
+            &:before{
+              content: "\e089";
+              font-family: 'ElegantIcons';
+              position: absolute;
+              left: -48px;
+              top: 8px;
+              font-size: 22px;
+              color: #aaaaaa;
+            }
+            &:hover{
+              &:before{
+                color: @brand-primary;
+              }
+            }
+          }
+        }
+        .yith-wcwl-wishlistexistsbrowse{
+          display: block;
+          width: 40px;
+          height: 40px;
+          text-indent: 60px;
+          overflow: hidden;
+          position: relative;
+          .transition(all 0.4s ease 0s);
+          white-space: nowrap;
+          &:before{
+            content: "\e089";
+            font-family: 'ElegantIcons';
+            position: absolute;
+            left: -48px;
+            top: 8px;
+            font-size: 22px;
+            color: #aaaaaa;
+          }
+          &:hover{
+            &:before{
+              color: @brand-primary;
+            }
+          }
+          .feedback{
+            display: none;
+          }
+        }
+
+      }
+      .simple-product-entry{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding-left: 20px;
+        .price{
+          color: @gray;
+        }
+        h3{
+          margin: 6px 0 20px;
+          padding: 0;
+          font-size: @font-size-base;
+          a{
+            text-decoration: none;
+            font-family: @font-family-sans-serif;
+            font-weight: @font-weight-base;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Product Categories
+ * -----------------------------------------------------------------------------
+ */
+.noo_custom_categories{
+  text-align: center;
+  h3{
+    font-size: 32px;
+    line-height: 24px;
+    margin: 28px 0 10px 0;
+    padding: 0;
+    color: #333;
+    text-transform: uppercase;
+  }
+  a{
+    font-weight: @font-weight-bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #333333;
+    i{
+      font-weight: @font-weight-bold;
+      padding-left: 7px;
+    }
+  }
+  &.content_top{
+    .custom-content{
+      margin-bottom: 25px;
+      h3{
+        margin-top: 15px;
+      }
+    }
+  }
+  &:hover{
+    .custom-thumbnail{
+      &:before{
+        .opacity(1);
+      }
+      .first,
+      .last{
+        &:before,
+        &:after{
+          .scale(1);
+        }
+      }
+    }
+  }
+}
+.custom-thumbnail{
+  position: relative;
+ img{
+    width: 100%;
+  }
+  &:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    content: '';
+    background: rgba(0,0,0,0.3);
+    height: 100%;
+    .opacity(0);
+    .transition(all 0.4s ease 0s);
+  }
+  a{
+    display: block;
+  }
+  .first{
+    position: absolute;
+    width: ~"calc(100% - 40px)";
+    height: ~"calc(100% - 40px)";
+    content: '';
+    left: 20px;
+    top: 20px;
+    &:before{
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      background: @white;
+      .scale(0);
+      .transition(all 0.4s ease 0s);
+    }
+    &:after{
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      background: @white;
+      .scale(0);
+      .transition(all 0.4s ease 0s);
+    }
+
+  }
+  .last{
+    position: absolute;
+    width: ~"calc(100% - 40px)";
+    height: ~"calc(100% - 40px)";
+    content: '';
+    left: 20px;
+    top: 20px;
+    &:before{
+      width: 1px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      content: '';
+      background: @white;
+      .scale(0);
+      .transition(all 0.4s ease 0s);
+    }
+    &:after{
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      content: '';
+      background: @white;
+      .scale(0);
+      .transition(all 0.4s ease 0s);
+    }
+  }
+}
+
+/**
+ * 4.2 - Noo Member
+ * -----------------------------------------------------------------------------
+ */
+div.noo-shmember-header{
+  margin-bottom: 50px;
+}
+.noo-team-member{
+  figure{
+    .perspective(500px);
+    display: block;
+    &:hover{
+      .box-shadow(0 5px 25px 0 rgba(0,0,0,0.1));
+      .transition(all 0.4s ease 0.2s);
+      .noo-teamm-image{
+        img{
+         .scale(1.02);
+        }
+      }
+      figcaption{
+        .rotateX(0);
+        .opacity(1);
+      }
+    }
+    .noo-teamm-image{
+      position: relative;
+      overflow: hidden;
+      img{
+        .transition(all 0.4s ease 0s);
+        width: 100%;
+      }
+    }
+    figcaption{
+      background: @white;
+      padding: 25px 15px;
+      text-align: center;
+      .rotateX(-70deg);
+      .transform-origin(top center);
+      .transition(all 0.4s ease 0s);
+      .opacity(0);
+      h4{
+        margin: 0 0 11px 0;
+        font-size: 20px;
+        font-weight: @font-weight-bold;
+        text-transform: uppercase;
+        font-family: @font-family-sans-serif;
+        letter-spacing: 1px;
+      }
+      .position{
+        display: block;
+      }
+      .noo-team-social{
+        margin-top: 10px;
+        display: block;
+        a{
+          font-size: @font-size-large;
+          color: #ccc;
+          margin: 5px 10px;
+          text-decoration: none;
+          .transition(all 0.4s ease 0s);
+          &:hover{
+            color: @brand-primary;
+          }
+        }
+      }
+    }
+  }
+}
+/**
+ * 4.2 - Noo Introduce
+ * -----------------------------------------------------------------------------
+ */
+.noo-introduce{
+  position: relative;
+  .clearfix;
+  .noo-introduce-icon{
+    position: absolute;
+    width: 60px;
+    top: 50%;
+    left: 0;
+    .translate(0,-50%);
+  }
+  .noo-introduce-content{
+    margin-left: 60px;
+    border-left: 1px solid @gray-lighter;
+    padding-left: 20px;
+    padding-top: 0;
+    h3{
+      margin: 0 0 11px 0;
+      padding: 0;
+      font-size: @font-size-large;
+      font-family: @font-family-sans-serif;
+    }
+    p{
+      margin: 0;
+    }
+  }
+
+
+}
+.noo-attr-intro{
+  color: @gray;
+  font-family: @headings-font-family;
+  font-weight: @font-weight-semibold;
+  a{
+    font-family: @font-family-sans-serif;
+    font-weight: @font-weight-base;
+    padding-left: 8px;
+  }
+}
+
+/**
+ * 4.2 - Noo Custom form 7
+ * -----------------------------------------------------------------------------
+ */
+div.wpcf7{
+  background: @white;
+  padding: 70px 15px 80px;
+  border: 1px solid @gray-lighter;
+}
+.noo-custom-form-7{
+  overflow: hidden;
+  max-width: 750px;
+  width: 100%;
+  margin: auto;
+  .noo-shblog-header{
+    margin-bottom: 40px;
+  }
+  input[type='text'],
+  input[type='email']{
+    background: #fcfcfc;
+    border: 1px solid @gray-lighter;
+    height: 40px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 10px 0;
+    .placeholder(#666);
+  }
+  textarea{
+    background: #fcfcfc;
+    border: 1px solid @gray-lighter;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    .placeholder(#666);
+    height: 170px;
+  }
+  input[type='submit']{
+    font-size: 14px;
+    font-weight: @font-weight-bold;
+    text-transform: uppercase;
+    display: inline-block;
+    background: @secondary_color;
+    .border-radius(25px);
+    padding: 0 30px;
+    text-decoration: none;
+    .transition(all 0.4s ease 0s);
+    height: 40px;
+    color: @white;
+    border: 0;
+    margin-top: 15px;
+    &:hover,
+    &:focus{
+      background: @hover-secondary;
+      outline: none;
+      outline-color: transparent;
+    }
+  }
+  ~ .wpcf7-response-output{
+    max-width: 750px;
+    width: 100%;
+    margin:30px auto 0;
+  }
+}

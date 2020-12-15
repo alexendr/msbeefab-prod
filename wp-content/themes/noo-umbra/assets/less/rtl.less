@@ -1,0 +1,60 @@
+
+/*
+* 6.0 Theme RTL
+* -----------------------------------------------------------------------------
+*/
+.theme-rtl{
+  text-align: right;
+  header{
+    .navbar-header{
+      float: right !important;
+    }
+    .noo-main-menu{
+      float: left !important;
+      .navbar-nav{
+        li{
+          >.sub-menu{
+            left: auto;
+            right: 0;
+            li {
+              .sub-menu {
+                right: 70%;
+                left: auto;
+              }
+              &:hover{
+                .sub-menu{
+                  right: 100%;
+                }
+              }
+            }
+          }
+          &:hover{
+            .sub-menu{
+              top: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  form{
+    input,
+    select,
+    textarea{
+      text-align: right;
+    }
+  }
+  #comments{
+    ol,li{
+      .comment-wrap .comment-img{
+        float: right;
+      }
+      .comment-block{
+        padding-right: 110px;
+        padding-left: 0;
+      }
+    }
+  }
+
+}

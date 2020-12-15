@@ -1,0 +1,151 @@
+/**
+ * Style widget
+ */
+.noo-search-submit{
+	display: none;
+}
+.widget_search {
+	.note-search{
+		display: none;
+	}
+	form {
+		position: relative;
+		.noo-search-submit {
+			display: inline-block;
+	        color: #333333;
+	        position: absolute;
+			bottom: 6px;
+			right: 6px;
+	        font-size: 14px;
+			background: transparent;
+			border: 0;
+			&:focus{
+				outline: none;
+				outline-color: transparent;
+			}
+		}
+		input[type='search']{
+			padding-right: 35px;
+		}
+	}
+}
+.widget_categories {
+	ul {
+	    margin: -10px 0;
+		> li {
+			text-align: right;
+			position: relative;
+			a {
+				float: left;
+				font-size: 16px;
+				line-height: 38px;
+				padding-left: 20px;
+			}
+			.after_cler();
+			&:before {
+				content: '';
+				height: 6px;
+				width: 6px;
+				background: #e2e2e2;
+				position: absolute;
+				top: 17px;
+				left: 0;
+				.transition(all .4s ease 0s);
+				.border-radius(50%);
+			}
+			&:hover {
+				&:before {
+					background: @brand-primary;
+				}
+			}
+		}
+	}
+}
+
+.widget_recent_entries {
+	ul {
+	    margin: -10px 0;
+		> li {
+			position: relative;
+			a {
+				font-size: 16px;
+				line-height: 38px;
+				padding-left: 20px;
+			}
+			&:before {
+				content: '';
+				height: 6px;
+				width: 6px;
+				background: #e2e2e2;
+				position: absolute;
+				top: 17px;
+				left: 0;
+				.transition(all .4s ease 0s);
+				.border-radius(50%);
+			}
+			&:hover {
+				&:before {
+					background: @brand-primary;
+				}
+			}
+		}
+	}
+}
+
+.tagcloud {
+	margin: -5px;
+	a {
+		background: #fafafa;
+	    display: inline-block;
+		font-size: 14px !important;
+		line-height: 32px;
+		border: 1px solid #f2f2f2;
+		margin: 5px;
+		padding: 0 16px;
+		&:hover {
+			background: #f2f2f2;
+		}
+	}
+}
+
+.noo-instagram{
+  ul{
+    list-style: none;
+    padding: 0;
+    margin: -1px;
+    .after_cler();
+    li{
+      float: left;
+      width: 33.3333%;
+      padding: 1px;
+      a {
+        display: block;
+        position: relative;
+        .transition(all 0.4s ease 0s);
+        &:hover{
+          &:before{
+            .scale(1);
+            .opacity(1);
+          }
+          &:after{
+            .translate(-50%,-50%);
+            .opacity(1);
+            .transition(all 0.4s ease 0.2s);
+          }
+        }
+        &:before{
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          content: '';
+          position: absolute;
+          background: fade(@secondary_color,70%);
+          .scale(0.5);
+          .opacity(0);
+          .transition(all 0.4s ease 0s);
+        }
+      }
+    }
+  }
+}

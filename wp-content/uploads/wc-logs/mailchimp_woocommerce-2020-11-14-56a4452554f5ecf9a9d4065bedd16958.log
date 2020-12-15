@@ -1,0 +1,86 @@
+2020-11-14T11:52:15+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 2389
+2020-11-14T11:52:16+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id 1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T11:52:17+00:00 NOTICE abandoned_cart.success :: email: bolanlesokunbi@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T11:52:17+00:00 NOTICE debug :: Order ID 2389 was pending and is now on-hold :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2020-11-14T11:52:18+00:00 NOTICE cart.member.updated :: Updated bolanlesokunbi@gmail.com subscriber status to transactional and language to en
+2020-11-14T11:54:03+00:00 NOTICE system.debug :: order 2389 is in on-hold status, and is being skipped for now.
+2020-11-14T11:57:30+00:00 NOTICE debug :: Order ID 2389 was on-hold and is now processing :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2020-11-14T11:57:30+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 2389
+2020-11-14T12:00:01+00:00 NOTICE order.member.updated :: Updated bolanlesokunbi@gmail.com subscriber status to subscribed and language to 
+2020-11-14T12:00:01+00:00 NOTICE order_submit.success :: addStoreOrder :: #2389 :: email: bolanlesokunbi@gmail.com :: abandoned cart deleted [1fa93abb1adbcef6e8035e707616dd50]
+2020-11-14T12:01:16+00:00 NOTICE debug :: Order ID 2389 was processing and is now completed :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2020-11-14T12:01:16+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 2389
+2020-11-14T12:03:05+00:00 NOTICE order.member.updated :: Updated bolanlesokunbi@gmail.com subscriber status to subscribed and language to 
+2020-11-14T12:03:05+00:00 NOTICE order_submit.success :: updateStoreOrder :: #2389 :: email: bolanlesokunbi@gmail.com
+2020-11-14T13:08:28+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id 1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T13:09:29+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id c4b8a5e43d1422af7750e1d76230cd2a
+2020-11-14T13:09:30+00:00 NOTICE abandoned_cart.success :: email: bolanlesokunbi@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T13:09:31+00:00 NOTICE cart.member.updated :: Updated bolanlesokunbi@gmail.com subscriber status to subscribed and language to en
+2020-11-14T13:09:31+00:00 NOTICE abandoned_cart.success :: email: bolowude@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=c4b8a5e43d1422af7750e1d76230cd2a
+2020-11-14T13:09:32+00:00 NOTICE cart.member.updated :: Updated bolowude@gmail.com subscriber status to transactional and language to en
+2020-11-14T13:09:54+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id c4b8a5e43d1422af7750e1d76230cd2a
+2020-11-14T13:10:31+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id 1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T13:10:32+00:00 NOTICE abandoned_cart.success :: email: bolowude@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=c4b8a5e43d1422af7750e1d76230cd2a
+2020-11-14T13:10:34+00:00 NOTICE abandoned_cart.success :: email: bolanlesokunbi@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T13:11:01+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 2390
+2020-11-14T13:11:01+00:00 NOTICE ac.cart_swap :: Deleted cart [bolanlesokunbi@gmail.com] :: ID [1fa93abb1adbcef6e8035e707616dd50]
+2020-11-14T13:11:01+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id c4b8a5e43d1422af7750e1d76230cd2a
+2020-11-14T13:11:03+00:00 NOTICE debug :: Order ID 2390 was pending and is now on-hold :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2020-11-14T13:11:52+00:00 NOTICE abandoned_cart.success :: email: bolowude@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=c4b8a5e43d1422af7750e1d76230cd2a
+2020-11-14T13:13:21+00:00 NOTICE system.debug :: order 2390 is in on-hold status, and is being skipped for now.
+2020-11-14T13:26:10+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id 1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T13:26:12+00:00 NOTICE abandoned_cart.success :: email: bolanlesokunbi@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T13:26:25+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id 1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T13:26:55+00:00 NOTICE abandoned_cart.success :: email: bolanlesokunbi@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=1fa93abb1adbcef6e8035e707616dd50
+2020-11-14T13:27:01+00:00 NOTICE ac.cart_swap :: Deleted cart [bolanlesokunbi@gmail.com] :: ID [1fa93abb1adbcef6e8035e707616dd50]
+2020-11-14T13:27:02+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id c4b8a5e43d1422af7750e1d76230cd2a
+2020-11-14T13:27:32+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 2391
+2020-11-14T13:27:32+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id 3bd0a7c2ba93d0a94d50631431be7576
+2020-11-14T13:27:33+00:00 NOTICE abandoned_cart.success :: email: bolowude@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=c4b8a5e43d1422af7750e1d76230cd2a
+2020-11-14T13:27:34+00:00 NOTICE abandoned_cart.success :: email: beefab@me.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=3bd0a7c2ba93d0a94d50631431be7576
+2020-11-14T13:27:34+00:00 NOTICE cart.member.updated :: Updated beefab@me.com subscriber status to subscribed and language to en
+2020-11-14T13:27:36+00:00 NOTICE debug :: Order ID 2391 was pending and is now on-hold :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2020-11-14T13:29:55+00:00 NOTICE system.debug :: order 2391 is in on-hold status, and is being skipped for now.
+2020-11-14T13:43:19+00:00 NOTICE debug :: Order ID 2391 was on-hold and is now processing :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2020-11-14T13:43:19+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 2391
+2020-11-14T13:44:04+00:00 NOTICE debug :: Order ID 2390 was on-hold and is now processing :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2020-11-14T13:44:04+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 2390
+2020-11-14T13:44:57+00:00 NOTICE order.member.updated :: Updated beefab@me.com subscriber status to subscribed and language to 
+2020-11-14T13:44:57+00:00 NOTICE order_submit.success :: addStoreOrder :: #2391 :: email: beefab@me.com :: abandoned cart deleted [3bd0a7c2ba93d0a94d50631431be7576]
+2020-11-14T13:45:40+00:00 NOTICE order.member.updated :: Updated bolowude@gmail.com subscriber status to subscribed and language to 
+2020-11-14T13:45:40+00:00 NOTICE order_submit.success :: addStoreOrder :: #2390 :: email: bolowude@gmail.com :: abandoned cart deleted [c4b8a5e43d1422af7750e1d76230cd2a]

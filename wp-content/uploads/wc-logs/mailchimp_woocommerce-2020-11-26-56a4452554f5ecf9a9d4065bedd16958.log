@@ -1,0 +1,20 @@
+2020-11-26T18:52:00+00:00 NOTICE ac.cart_swap :: Deleted cart [beefab@me.com] :: ID [3bd0a7c2ba93d0a94d50631431be7576]
+2020-11-26T18:52:01+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Cart_Update queued :: obj_id 9f5d304942a5738ce1191801b5f9a387
+2020-11-26T18:53:56+00:00 NOTICE abandoned_cart.success :: email: rachaelomisore@gmail.com :: checkout_url: https://www.msbeefab.com/checkout/?mc_cart_id=9f5d304942a5738ce1191801b5f9a387
+2020-11-26T18:53:57+00:00 NOTICE cart.member.updated :: Updated rachaelomisore@gmail.com subscriber status to transactional and language to en
+2020-11-26T18:55:21+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2333
+2020-11-26T18:55:56+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2333
+2020-11-26T18:56:42+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2335
+2020-11-26T18:56:55+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2335
+2020-11-26T18:56:56+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2335
+2020-11-26T18:57:18+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2335
+2020-11-26T18:57:52+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2337
+2020-11-26T18:58:27+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2337
+2020-11-26T19:00:23+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2350
+2020-11-26T19:00:44+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2350
+2020-11-26T19:02:57+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2350
+2020-11-26T19:04:03+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2350
+2020-11-26T19:06:16+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2331
+2020-11-26T19:07:07+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2331
+2020-11-26T19:10:34+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2331
+2020-11-26T19:10:54+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2331

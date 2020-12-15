@@ -1,0 +1,1830 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: NOO Umbra Core\n"
+"POT-Creation-Date: 2017-06-05 10:59+0700\n"
+"PO-Revision-Date: 2017-06-05 10:59+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: noo-umbra-core.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/importer/noo-import.php:71
+msgid "Import Successfully!"
+msgstr ""
+
+#: admin/importer/noo-import.php:119 admin/importer/noo-import.php:128
+#: admin/importer/noo-import.php:178 admin/importer/noo-import.php:182
+#: admin/importer/noo-import.php:191
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: admin/importer/noo-import.php:120
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: admin/importer/noo-import.php:163
+msgid "All done. Have fun!"
+msgstr ""
+
+#: admin/importer/noo-import.php:183
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: admin/importer/noo-import.php:199
+#, php-format
+msgid ""
+"This NOO file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: admin/importer/noo-import.php:224
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: admin/importer/noo-import.php:246
+msgid "Import author:"
+msgstr ""
+
+#: admin/importer/noo-import.php:257
+msgid "or create new user with login name:"
+msgstr ""
+
+#: admin/importer/noo-import.php:260
+msgid "as a new user:"
+msgstr ""
+
+#: admin/importer/noo-import.php:268
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: admin/importer/noo-import.php:270
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: admin/importer/noo-import.php:271
+msgid "- Select -"
+msgstr ""
+
+#: admin/importer/noo-import.php:322
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: admin/importer/noo-import.php:373
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: admin/importer/noo-import.php:414
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: admin/importer/noo-import.php:461 admin/importer/noo-import.php:603
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: admin/importer/noo-import.php:487
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: admin/importer/noo-import.php:568
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: admin/importer/noo-import.php:734
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: admin/importer/noo-import.php:741
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: admin/importer/noo-import.php:808
+msgid "The given object ID is not that of a menu item."
+msgstr ""
+
+#: admin/importer/noo-import.php:813
+msgid "Invalid menu ID."
+msgstr ""
+
+#: admin/importer/noo-import.php:965
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: admin/importer/noo-import.php:978
+msgid "Invalid file type"
+msgstr ""
+
+#: admin/importer/noo-import.php:1022
+msgid "Remote server did not respond"
+msgstr ""
+
+#: admin/importer/noo-import.php:1028
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: admin/importer/noo-import.php:1035
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: admin/importer/noo-import.php:1040
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: admin/importer/noo-import.php:1046
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: admin/importer/noo-import.php:1144
+msgid "Import WordPress"
+msgstr ""
+
+#: admin/importer/noo-import.php:1151
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: admin/importer/noo-import.php:1166
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (NOO) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: admin/importer/noo-import.php:1167
+msgid "Choose a NOO (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: admin/importer/noo-import.php:1303
+msgid "Import data could not be read. Please try a different file."
+msgstr ""
+
+#: admin/importer/noo-import.php:1345
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: admin/importer/noo-import.php:1367
+msgid "Site does not support widget"
+msgstr ""
+
+#: admin/importer/noo-import.php:1403
+msgid "Widget already exists"
+msgstr ""
+
+#: admin/importer/noo-import.php:1465
+msgid "Imported"
+msgstr ""
+
+#: admin/importer/noo-import.php:1468
+msgid "Imported to Inactive"
+msgstr ""
+
+#: admin/importer/noo-import.php:1475
+msgid "No Title"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:91
+msgid "Do you want to continue this action?"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:92
+msgid "Please waiting, not exit page."
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:107
+#, php-format
+msgid "Welcome to %s,"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:108
+msgid ""
+"If it is the first time you install this theme, you should go and check the "
+"basic setting."
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:111
+msgid "Go to Quick Setup"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:114
+msgid "Skip Setup"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:126
+#: admin/importer/noo-setup-install.php:127
+msgid "Noo Settings"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:173
+#: admin/importer/noo-setup-install.php:456
+#: admin/importer/noo-setup-install.php:495
+msgid "Done"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:194
+msgid "Quick Setup"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:195
+msgid "Import Demo"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:278
+msgid "Cancel"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:296
+#: admin/importer/noo-setup-install.php:298
+msgid "Automatic Update Theme"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:305
+msgid "Purchase Code"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:306
+msgid "ThemeForest Purchase Code:"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:307
+msgid "(Optional)"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:310
+msgid ""
+"This purchase code makes sure that our server recognizes your website thus "
+"allows you to download and install the new updates."
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:315
+#, php-format
+msgid "<a target=\"_blank\" href=\"%s\">How to get License key?</a>"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:330
+msgid "Required Pages"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:339
+msgid "Front Page"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:342
+msgid "The Homepage"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:351
+msgid "Member"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:354
+msgid "The main page for all the action of Employer and Candidate"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:362
+msgid "Packages"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:365
+msgid "The page for Employer to choose Job Package"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:373
+msgid "Post Job"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:376
+msgid "The page for Job posting"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:380
+msgid "Post Resume"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:383
+msgid "The page for Resume posting"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:446
+msgid "Missing setting"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:448
+msgid "Wrong"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:450
+#, php-format
+msgid "Page should contains %s"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:452
+#, php-format
+msgid "Page should have template %s"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:467
+#: admin/importer/noo-setup-install.php:509
+msgid "Correct now"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:474
+msgid "Edit setting"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:505
+#, php-format
+msgid "You need to create a page with template %s"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:533 admin/vc_extension/map/map.php:18
+msgid "Umbra"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:543
+#: admin/importer/noo-setup-install.php:545
+msgid "Settings"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:553
+msgid "Import Post"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:558
+msgid "Import Nav Menu"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:563
+msgid "Import Comment"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:579
+msgid "Install "
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:588
+msgid "Install Demo"
+msgstr ""
+
+#: admin/importer/noo-setup-install.php:641
+msgid "General Options"
+msgstr ""
+
+#: admin/importer/parsers.php:42 admin/importer/parsers.php:72
+#: admin/importer/parsers.php:80
+msgid "There was an error when reading this NOO file"
+msgstr ""
+
+#: admin/importer/parsers.php:43
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: admin/importer/parsers.php:84 admin/importer/parsers.php:89
+#: admin/importer/parsers.php:279 admin/importer/parsers.php:468
+msgid ""
+"This does not appear to be a NOO file, missing/invalid NOO version number"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:26 admin/post-type/noo-our-team.php:27
+#: admin/post-type/noo-our-team.php:28
+msgid "Team Member"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:29 admin/post-type/noo-testimonials.php:23
+msgid "Add New"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:30 admin/post-type/noo-our-team.php:32
+msgid "Add New team Item"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:31
+msgid "Edit team Item"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:33
+msgid "View team"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:34
+msgid "Search team"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:35
+msgid "No team items found"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:36
+msgid "No team items found in trash"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:73 admin/post-type/noo-our-team.php:75
+#: admin/vc_extension/map/map.php:245 admin/vc_extension/map/map.php:765
+#: admin/vc_extension/map/map.php:1079 admin/vc_extension/map/map.php:1257
+msgid "Categories"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:74
+msgid "Category"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:76
+msgid "All Categories"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:77
+msgid "Edit Category"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:78
+msgid "View Category"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:79
+msgid "Update Category"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:80
+msgid "Add New Category"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:81
+msgid "New Category Name"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:82
+msgid "Parent Category"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:83
+msgid "Parent Category:"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:84
+msgid "Search Categories"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:85
+msgid "Popular Categories"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:86
+msgid "Separate Categories with commas"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:87
+msgid "Add or remove Categories"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:88
+msgid "Choose from the most used Categories"
+msgstr ""
+
+#: admin/post-type/noo-our-team.php:89
+msgid "Categories found"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:20
+#: admin/post-type/noo-testimonials.php:21
+#: admin/post-type/noo-testimonials.php:22
+msgid "Testimonial"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:24
+#: admin/post-type/noo-testimonials.php:26
+msgid "Add New testimonial Item"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:25
+msgid "Edit testimonial Item"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:27
+msgid "View testimonial"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:28
+msgid "Search testimonial"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:29
+msgid "No testimonial items found"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:30
+msgid "No testimonial items found in trash"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:69
+#: admin/post-type/noo-testimonials.php:71
+msgid "Testimonial Categories"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:70
+msgid "Testimonial Category"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:72
+msgid "All Testimonial Categories"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:73
+msgid "Edit Testimonial Category"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:74
+msgid "View Testimonial Category"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:75
+msgid "Update Testimonial Category"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:76
+msgid "Add New Testimonial Category"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:77
+msgid "New Testimonial Category Name"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:78
+msgid "Parent Testimonial Category"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:79
+msgid "Parent Testimonial Category:"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:80
+msgid "Search Testimonial Categories"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:81
+msgid "Popular Testimonial Categories"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:82
+msgid "Separate Testimonial Categories with commas"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:83
+msgid "Add or remove Testimonial Categories"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:84
+msgid "Choose from the most used Testimonial Categories"
+msgstr ""
+
+#: admin/post-type/noo-testimonials.php:85
+msgid "No Testimonial Categories found"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:43
+msgid "Sidebar Generator"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:170
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:201
+#: framework/customizer/class-noo_customizer_helper.php:361
+msgid "Remove"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:171
+msgid "You've made changes, don't forget to save."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:172
+msgid "Changes were saved successfully."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:173
+msgid "An unexpected error ocurred."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:174
+msgid "The sidebar was successfully created."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:175
+msgid "The sidebar already exists. Please change the name."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:176
+msgid "Please enter a name for this sidebar."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:177
+msgid "Are you sure? If you remove this sidebar it can't be restored."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:178
+msgid "Sidebar Removed"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:179
+msgid "Data imported successfully."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:196
+msgid "Add new"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:197
+msgid "Save Changes"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:198
+msgid "Sidebar Name:"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:199
+msgid "ID:"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:200
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:312
+msgid "Shortcode:"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:202
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:223
+msgid "Import"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:221
+msgid "Sidebars"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:222
+msgid "Export"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:224
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:311
+msgid "How to use?"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:292
+msgid "Copy text from textarea:"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:301
+msgid "Paste exported data in textarea:"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:313
+msgid ""
+"Paste the shortcode anywhere you want, in posts, pages etc. If the input "
+"accept shortcodes, then the sidebar will be displayed."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:315
+msgid "Function:"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:316
+msgid ""
+"You can use the built-in function, but for this you should modify theme "
+"files and make sure to check if the function exists before use it."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:322
+msgid "WP Native function:"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:323
+msgid ""
+"You can use the built-in function <em>smk_sidebar</em>, but anyways I "
+"recommend using WP native function to avoid conflicts."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:329
+msgid "For more info visit the following links:"
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:380
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:384
+msgid "Data is not valid."
+msgstr ""
+
+#: admin/smk-sidebar-generator/smk-sidebar-generator.php:390
+msgid "Please enter data."
+msgstr ""
+
+#: admin/vc_extension/map/map.php:26
+msgid "If checked container will be set to width 1170px for content."
+msgstr ""
+
+#: admin/vc_extension/map/map.php:28 admin/vc_extension/map/map.php:76
+#: admin/vc_extension/map/map.php:279 admin/vc_extension/map/map.php:451
+#: framework/customizer/_init.php:141
+msgid "Yes"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:37
+msgid "Product Grid"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:45 admin/vc_extension/map/map.php:166
+#: admin/vc_extension/map/map.php:312 admin/vc_extension/map/map.php:374
+#: admin/vc_extension/map/map.php:502 admin/vc_extension/map/map.php:555
+#: admin/vc_extension/map/map.php:636 admin/vc_extension/map/map.php:724
+#: admin/vc_extension/map/map.php:984 admin/vc_extension/map/map.php:1043
+#: admin/vc_extension/map/map.php:1202 admin/vc_extension/map/map.php:1241
+#: admin/vc_extension/map/map.php:1301
+msgid "Title"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:52 admin/vc_extension/map/map.php:180
+msgid "Sub title"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:59 admin/vc_extension/map/map.php:107
+#: admin/vc_extension/map/map.php:235 admin/vc_extension/map/map.php:298
+#: admin/vc_extension/map/map.php:338
+msgid "Choose Style"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:64
+msgid "Style One"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:65
+msgid "Style Two"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:66
+msgid "Style Three"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:71
+msgid "Using Masonry"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:77 admin/vc_extension/map/map.php:280
+#: admin/vc_extension/map/map.php:452 framework/customizer/_init.php:142
+msgid "No"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:82
+msgid "Choose Data"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:88
+msgid "Recent Products"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:89
+msgid "Featured products"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:90
+msgid "Best Selling Products"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:91
+msgid "Sale Products"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:92
+msgid "By Categories"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:97
+msgid "Choose categories"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:112
+msgid "No Filter"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:113
+msgid "Style Filter"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:119
+msgid "Choose columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:124
+msgid "5 Columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:125
+msgid "4 Columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:126
+msgid "3 Columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:127
+msgid "2 Columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:128
+msgid "1 Columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:133 admin/vc_extension/map/map.php:193
+#: admin/vc_extension/map/map.php:262 admin/vc_extension/map/map.php:806
+#: admin/vc_extension/map/map.php:862 admin/vc_extension/map/map.php:928
+#: admin/vc_extension/map/map.php:1132 admin/vc_extension/map/map.php:1263
+msgid "Order By"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:138 admin/vc_extension/map/map.php:198
+#: admin/vc_extension/map/map.php:267 admin/vc_extension/map/map.php:811
+#: admin/vc_extension/map/map.php:867 admin/vc_extension/map/map.php:933
+#: admin/vc_extension/map/map.php:1137 admin/vc_extension/map/map.php:1268
+msgid "Recent First"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:139 admin/vc_extension/map/map.php:199
+#: admin/vc_extension/map/map.php:268 admin/vc_extension/map/map.php:812
+#: admin/vc_extension/map/map.php:868 admin/vc_extension/map/map.php:934
+#: admin/vc_extension/map/map.php:1138 admin/vc_extension/map/map.php:1269
+msgid "Older First"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:140 admin/vc_extension/map/map.php:200
+#: admin/vc_extension/map/map.php:269 admin/vc_extension/map/map.php:813
+#: admin/vc_extension/map/map.php:869 admin/vc_extension/map/map.php:935
+#: admin/vc_extension/map/map.php:1139 admin/vc_extension/map/map.php:1270
+msgid "Title Alphabet"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:141 admin/vc_extension/map/map.php:201
+#: admin/vc_extension/map/map.php:270 admin/vc_extension/map/map.php:814
+#: admin/vc_extension/map/map.php:870 admin/vc_extension/map/map.php:936
+#: admin/vc_extension/map/map.php:1140 admin/vc_extension/map/map.php:1271
+msgid "Title Reversed Alphabet"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:145 admin/vc_extension/map/map.php:205
+msgid "Limited"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:158
+msgid "Product Group Sale"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:173 admin/vc_extension/map/map.php:355
+#: admin/vc_extension/map/map.php:549 admin/vc_extension/map/map.php:1036
+#: admin/vc_extension/map/map.php:1195 admin/vc_extension/map/map.php:1294
+msgid "Image"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:187 admin/vc_extension/map/map.php:319
+#: admin/vc_extension/map/map.php:380 admin/vc_extension/map/map.php:643
+#: admin/vc_extension/map/map.php:731 admin/vc_extension/map/map.php:992
+#: admin/vc_extension/map/map.php:1207 admin/vc_extension/map/map.php:1248
+msgid "Description"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:227
+msgid "Noo Testimonial"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:229
+msgid "Display post type testimonial"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:240 admin/vc_extension/map/map.php:480
+#: framework/customizer/class-noo_customizer_helper.php:362
+msgid "Default"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:241
+msgid "Thumbnail Control"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:254
+msgid "Limited Testimonial"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:274 admin/vc_extension/map/map.php:446
+msgid "Auto Play"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:290
+msgid "Noo Mailchimp"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:292
+msgid "Displays your MailChimp for WordPress sign-up form"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:303
+msgid "Style one"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:304
+msgid "Style two"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:305
+msgid "Style three"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:306
+msgid "Style four"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:330
+msgid "Noo Services"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:332
+msgid "Display Services"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:343
+msgid "Style Center"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:344
+msgid "Style Left"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:349
+msgid "Choose Icon"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:354
+msgid "Font"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:360
+msgid "Image Icon"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:367
+msgid "Icon"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:391
+msgid "Noo Partner"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:393
+msgid "Display Partner"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:399
+msgid "Style Border ?"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:403
+msgid "No Border"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:404
+msgid "Yes Border"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:409
+msgid "Limited post of Slider"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:422
+msgid "Upload Images"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:429
+msgid "Custom links"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:430
+msgid ""
+"Enter links for each Clients here. Divide links with linebreaks (Enter) ."
+msgstr ""
+
+#: admin/vc_extension/map/map.php:435
+msgid "Custom link target"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:436
+msgid "Select where to open custom links."
+msgstr ""
+
+#: admin/vc_extension/map/map.php:462
+msgid "Noo Banner"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:464 admin/vc_extension/map/map.php:532
+msgid "Display Banner"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:475 admin/vc_extension/map/map.php:579
+msgid "Style item"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:481
+msgid "Vertical"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:482
+msgid "Horizontal"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:494
+msgid "Color"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:495
+msgid "Color for title and link"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:510 admin/vc_extension/map/map.php:561
+#: admin/vc_extension/map/map.php:650 admin/vc_extension/map/map.php:834
+#: admin/vc_extension/map/map.php:1000 admin/vc_extension/map/map.php:1214
+msgid "Link"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:517
+msgid "Link text"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:530
+msgid "Noo Simple Banner"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:538
+msgid "Content position"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:543
+msgid "Content right"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:544
+msgid "Content left"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:571
+msgid "Noo Simple Countdown"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:584
+msgid "Simle countdow center"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:585
+msgid "Simle countdow left"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:590
+msgid "Background wraper"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:596 admin/vc_extension/map/map.php:606
+#: admin/vc_extension/map/map.php:616
+msgid "Design options"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:600
+msgid "Title wraper"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:610
+msgid "Description wraper"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:620
+msgid "Background "
+msgstr ""
+
+#: admin/vc_extension/map/map.php:627
+msgid "Choose Date"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:663
+msgid "Product Countdown"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:671
+msgid "Choose date"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:680
+msgid "Select identificator"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:684
+msgid "Input product ID or product SKU or product title to see suggestions"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:716
+msgid "Noo Blog"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:720
+msgid "Display post with muti style"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:738
+msgid "Style blog"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:743
+msgid "Style 1"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:744
+msgid "Style 2"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:745
+msgid "Style 3"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:746
+msgid "Style 4"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:747
+msgid "Style 5"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:752 admin/vc_extension/map/map.php:1066
+msgid "Data Source"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:753 admin/vc_extension/map/map.php:1067
+msgid "Select content type"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:766 admin/vc_extension/map/map.php:1080
+msgid "Select categories."
+msgstr ""
+
+#: admin/vc_extension/map/map.php:777 admin/vc_extension/map/map.php:1091
+msgid "Tags"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:778 admin/vc_extension/map/map.php:1092
+msgid "Select Tags."
+msgstr ""
+
+#: admin/vc_extension/map/map.php:789 admin/vc_extension/map/map.php:1103
+msgid "Include only"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:791 admin/vc_extension/map/map.php:1105
+msgid "Add posts, pages, etc. by title."
+msgstr ""
+
+#: admin/vc_extension/map/map.php:818 admin/vc_extension/map/map.php:1144
+#: admin/vc_extension/map/map.php:1275
+msgid "Posts Per Page"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:826 admin/vc_extension/map/map.php:1152
+msgid "Excerpt Length"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:847
+msgid "Product Simple Slider"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:849
+msgid "Display product by slider"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:855 admin/vc_extension/map/map.php:921
+msgid "Choose Categories"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:856 admin/vc_extension/map/map.php:922
+msgid "Display product in categories"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:877 admin/vc_extension/map/map.php:942
+msgid "Limit"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:885
+msgid "Config columns slider"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:889
+msgid "3 columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:890
+msgid "5 columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:891
+msgid "4 columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:892
+msgid "2 columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:893
+msgid "1 columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:901
+msgid "Auto Slider"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:904
+msgid "False"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:905
+msgid "True"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:913
+msgid "Product Simple"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:915
+msgid "Display product"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:948
+msgid "Banner style"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:953
+msgid "Banner left"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:954
+msgid "Banner right"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:956 admin/vc_extension/map/map.php:970
+#: admin/vc_extension/map/map.php:980 admin/vc_extension/map/map.php:988
+#: admin/vc_extension/map/map.php:996 admin/vc_extension/map/map.php:1006
+msgid "Banner options"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:961
+msgid "Content style"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:966
+msgid "Bottom right"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:967
+msgid "Top left"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:968
+msgid "Center center"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:977
+msgid "Upload banner"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1015
+msgid "Short Image"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1017
+msgid "Display image"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1025 admin/vc_extension/map/map.php:1184
+msgid "Style"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1028
+msgid "Style left"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1029
+msgid "Style right"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1058
+msgid "Noo Blog Masonry"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1062
+msgid "Display post with _masonry style"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1120
+msgid "Columns"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1125
+msgid "Columns 4"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1126
+msgid "Columns 3"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1127
+msgid "Columns 2"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1160
+msgid "Choose pagination"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1165
+msgid "Infinitescroll"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1166
+msgid "Ajax Button"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1174
+msgid "Custom Link"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1176
+msgid "Display Link"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1187
+msgid "Content Top"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1188
+msgid "Content Bottom"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1233
+msgid "Noo Team"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1235
+msgid "Display post type team member "
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1286
+msgid "Noo Introduce"
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1288
+msgid "Display Introduce "
+msgstr ""
+
+#: admin/vc_extension/map/map.php:1309
+msgid "Text"
+msgstr ""
+
+#: admin/vc_extension/map/new_params.php:103
+#: admin/vc_extension/map/new_params.php:144
+#: admin/vc_extension/map/new_params.php:185
+msgid "All"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-blog-masonry.php:96
+msgid "Load more"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-blog.php:95
+#: admin/vc_extension/shortcodes/noo-blog.php:149
+msgid "0"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-blog.php:95
+#: admin/vc_extension/shortcodes/noo-blog.php:149
+msgid "1"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-blog.php:95
+#: admin/vc_extension/shortcodes/noo-blog.php:149
+msgid "%"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-blog.php:159
+msgid "read more"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-countdown.php:68
+msgid "Years"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-countdown.php:68
+msgid "Months"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-countdown.php:68
+msgid "Weeks"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-countdown.php:68
+msgid "Days"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-countdown.php:68
+msgid "Hours"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-countdown.php:68
+msgid "Minutes"
+msgstr ""
+
+#: admin/vc_extension/shortcodes/noo-countdown.php:68
+msgid "Seconds"
+msgstr ""
+
+#: framework/customizer/_init.php:78
+msgid "NavBar Height (px)"
+msgstr ""
+
+#: framework/customizer/_init.php:79
+msgid "Mobile NavBar Height (px)"
+msgstr ""
+
+#: framework/customizer/_init.php:80 framework/customizer/_init.php:143
+msgid "Updating ..."
+msgstr ""
+
+#: framework/customizer/_init.php:81
+msgid "Error when parsing your file."
+msgstr ""
+
+#: framework/customizer/_init.php:82
+msgid "We are preparing your export file, please wait..."
+msgstr ""
+
+#: framework/customizer/_init.php:83
+msgid "There was a problem generating your export file, please try again."
+msgstr ""
+
+#: framework/customizer/_init.php:144
+msgid ""
+"This option doesn't support live preview. Save it and see the change on your "
+"site."
+msgstr ""
+
+#: framework/customizer/_init.php:145
+#, php-format
+msgid "Wanna go to %s to see the change?"
+msgstr ""
+
+#: framework/customizer/_init.php:146
+msgid "Blog Page"
+msgstr ""
+
+#: framework/customizer/_init.php:147
+msgid "Shop Page"
+msgstr ""
+
+#: framework/customizer/_init.php:148
+msgid "An Archive Page"
+msgstr ""
+
+#: framework/customizer/_init.php:149
+msgid "A Post"
+msgstr ""
+
+#: framework/customizer/_init.php:150
+msgid "A Product"
+msgstr ""
+
+#: framework/customizer/_init.php:159
+#, php-format
+msgid "%s Archive Page"
+msgstr ""
+
+#: framework/customizer/_init.php:163
+#, php-format
+msgid "A %s Page"
+msgstr ""
+
+#: framework/customizer/_init.php:393
+msgid "Customizer credentials"
+msgstr ""
+
+#: framework/customizer/class-noo_customizer_helper.php:359
+#: framework/customizer/class-noo_customizer_helper.php:364
+msgid "Select logo"
+msgstr ""
+
+#: framework/customizer/class-noo_customizer_helper.php:360
+msgid "Change logo"
+msgstr ""
+
+#: framework/customizer/class-noo_customizer_helper.php:363
+msgid "No logo selected"
+msgstr ""
+
+#: framework/customizer/class-noo_customizer_helper.php:365
+msgid "Choose logo"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:46
+msgid "ON"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:52
+msgid "OFF"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:414
+msgid "Media Library"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:422
+msgid "Open Library"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:540
+msgid "- Select Sidebar -"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:569
+msgid "- Select Page -"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:660
+msgid "Extra Light"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:661
+msgid "Extra Light Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:662
+msgid "Light"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:663
+msgid "Light Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:664
+msgid "Book"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:665
+msgid "Book Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:666
+msgid "Regular"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:667
+msgid "Regular Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:668
+msgid "Medium"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:669
+msgid "Medium Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:670
+msgid "Semi-bold"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:671
+msgid "Semi-bold Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:672
+msgid "Bold"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:673
+msgid "Bold Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:674
+msgid "Extra-bold"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:675
+msgid "Extra-bold Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:676
+msgid "Heavy"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:677
+msgid "Heavy Italic"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:686
+msgid "- Font Family -"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:698
+msgid "- Styles -"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:714
+msgid "- Subsets -"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:809
+msgid "Mailchimp API key"
+msgstr ""
+
+#: framework/customizer/custom_controls.php:810
+#, php-format
+msgid ""
+"Enter Mailchimp API key to connect to your account. Don't know where to "
+"find? <a href=\"%s\" target=\"_BLANK\">Just click here to get your API</a>"
+msgstr ""
+
+#: framework/customizer/live-ajax.php:186
+msgid "Assign a menu"
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:109
+msgid "The Link"
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:118
+msgid "M4V File URL"
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:119
+msgid "Place the URL to your .m4v video file here."
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:124
+msgid "OGV File URL"
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:125
+msgid "Place the URL to your .ogv video file here."
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:130
+msgid "Video Aspect Ratio"
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:131
+msgid "Choose the aspect ratio for your video."
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:144
+msgid "Embedded Video Code"
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:145
+msgid ""
+"If you are using something other than self hosted video (YouTube, Vimeo, "
+"etc.) paste the embed code here. This field will override the above settings."
+msgstr ""
+
+#: framework/meta-boxes/class-helper.php:154
+msgid "Upload Image"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:101
+#: framework/meta-boxes/generate-meta-box.php:171
+msgid "Edit Gallery"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:101
+#: framework/meta-boxes/generate-meta-box.php:184
+msgid "Add Images"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:104
+msgid "Clear Gallery"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:204
+#: framework/meta-boxes/generate-meta-box.php:245
+msgid "Change File"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:204
+#: framework/meta-boxes/generate-meta-box.php:256
+msgid "Select File"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:207
+msgid "Clear File"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:228
+msgid "Select or Upload your File"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:230
+#: framework/meta-boxes/generate-meta-box.php:301
+msgid "Select"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:274
+#: framework/meta-boxes/generate-meta-box.php:327
+msgid "Change Image"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:274
+#: framework/meta-boxes/generate-meta-box.php:338
+msgid "Select Image"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:277
+msgid "Clear Image"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:299
+msgid "Select or Upload your Image"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:566
+msgid "Full-Width Page"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:569
+msgid "Page With Right Sidebar"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:572
+msgid "Page With Left Sidebar"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:576
+#, php-format
+msgid ""
+"Global setting for the Layout of Single Post page is: <strong>%s</strong>"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:579
+#, php-format
+msgid "And the Sidebar is: <strong>%s</strong>"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:602
+msgid "Don't Need Menu"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:617
+msgid "No User"
+msgstr ""
+
+#: framework/meta-boxes/generate-meta-box.php:645
+msgid " - No Slider - "
+msgstr ""
+
+#: noo-umbra-core.php:118
+msgid "Customizer"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "NOO Umbra Core"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://nootheme.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Plugin that adds all post types needed by our theme."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "NooTheme"
+msgstr ""

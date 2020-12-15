@@ -1,0 +1,88 @@
+<?php
+/**
+ * Shipping method settings option.
+ *
+ * @package WPDesk\FS\TableRate\NewRulesTablePointer
+ */
+
+namespace WPDesk\FS\TableRate\NewRulesTablePointer;
+
+/**
+ * Can add option to shipping method settings.
+ */
+class ShippingMethodNewRuleTableSetting {
+
+	const TRIGGER = 'new-rules-table';
+
+	const SETTINGS_OPTION = 'enable_new_rules_table';
+
+	const SHIPPING_METHOD_SETTINGS_OPTION = 'woocommerce_flexible_shipping_info_settings';
+
+	const OPTION_NEW_RULES_DISABLED = 'flexible_shipping_new_rules_was_disabled';
+
+	const VALUE_NO  = 'no';
+	const VALUE_YES = 'yes';
+
+	private function should_add_field_to_settings() {
+		return 1 === intval( get_option( RulesPointerOption::OPTION_NAME, '0' ) ) && ! wpdesk_is_plugin_active( 'flexible-shipping-pro/flexible-shipping-pro.php' );
+	}
+
+	/**
+	 * Add fields to settings.
+	 *
+	 * @param array $settings Settings.
+	 *
+	 * @return array
+	 */
+	public function add_fields_to_settings( array $settings ) {
+		if ( $this->should_add_field_to_settings() ) {
+			$settings[ self::SETTINGS_OPTION ] = array(
+				'type'  => 'checkbox',
+				'label' => __( 'Enable New Table Interface', 'flexible-shipping' ),
+				'title' => __( 'Rules table', 'flexible-shipping' ),
+			);
+		}
+		return $settings;
+	}
+
+	public function is_enabled() {
+		$settings = get_option( self::SHIPPING_METHOD_SETTINGS_OPTION, array() );
+		return isset( $settings[ self::SETTINGS_OPTION ] ) && $settings[ self::SETTINGS_OPTION ] === self::VALUE_YES;
+	}
+
+	public function watch_settings_change() {
+		add_action( 'update_option_' . self::SHIPPING_METHOD_SETTINGS_OPTION, array( $this, 'update_option_if_settings_changed' ), 10, 3 );
+	}
+
+	/**
+	 * @param array $old_value .
+	 * @param array $new_value .
+	 * @param string $option .
+	 */
+	public function update_option_if_settings_changed( $old_value, $new_value, $option ) {
+		$old_option_value = self::VALUE_NO;
+		$new_option_value = self::VALUE_NO;
+		if ( is_array( $old_value ) && is_array( $new_value ) ) {
+			if ( isset( $old_value[ self::SETTINGS_OPTION ] ) ) {
+				$old_option_value = $old_value[ self::SETTINGS_OPTION ];
+			}
+			if ( isset( $new_value[ self::SETTINGS_OPTION ] ) ) {
+				$new_option_value = $new_value[ self::SETTINGS_OPTION ];
+			}
+		}
+		if ( $old_option_value === self::VALUE_YES && $new_option_value === self::VALUE_NO ) {
+			update_option( self::OPTION_NEW_RULES_DISABLED, '1' );
+		}
+	}
+
+	/**
+	 * Display settings JavaScript.
+	 */
+	public function settings_script() {
+		if ( get_option( RulesPointerOption::OPTION_NAME, '0' ) === '1' ) {
+			$trigger = self::TRIGGER;
+			include __DIR__ . '/views/html-flexible-shipping-settings-script.php';
+		}
+	}
+
+}

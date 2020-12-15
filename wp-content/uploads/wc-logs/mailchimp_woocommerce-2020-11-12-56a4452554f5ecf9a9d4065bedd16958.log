@@ -1,0 +1,11 @@
+2020-11-12T23:10:02+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Product starts in 5 seconds :: obj_id 2262
+2020-11-12T23:15:37+00:00 NOTICE product_submit.success :: updateStoreProduct :: #2262
+2020-11-12T23:37:19+00:00 NOTICE debug :: Order ID 2330 was processing and is now completed :: Array
+(
+    [new_order] => 
+    [tracking] => 
+)
+
+2020-11-12T23:37:19+00:00 NOTICE action_scheduler.queue_job :: MailChimp_WooCommerce_Single_Order starts in 90 seconds :: obj_id 2330
+2020-11-12T23:39:00+00:00 NOTICE order.member.updated :: Updated seyifadase@gmail.com subscriber status to subscribed and language to 
+2020-11-12T23:39:00+00:00 NOTICE order_submit.success :: updateStoreOrder :: #2330 :: email: seyifadase@gmail.com

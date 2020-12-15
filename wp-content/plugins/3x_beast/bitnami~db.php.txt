@@ -1,0 +1,1 @@
+/home/bitnami/public_html/db.php

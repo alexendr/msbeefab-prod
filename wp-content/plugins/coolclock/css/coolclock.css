@@ -1,0 +1,17 @@
+.coolclock-container {
+	max-width: 100%;
+	display: flex; /* flex, not supported in IE9 and older */
+	flex-direction: column;
+	justify-content: space-evenly; /* center child elements vertically, distributed evenly over larger space (if set with height) */
+	align-items: center /* center child elements horizontally */
+}
+
+.coolclock-container canvas {
+	display: block;
+	margin: 0 auto; /* center horizontally on IE9 and older */
+    position: relative; /* needed for clock position offset to work */
+}
+
+.coolclock-subtext {
+	text-align: center
+}
